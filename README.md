@@ -62,8 +62,8 @@ chmod +x webpentest.py
 ./PortSpt.py -t http://example.com --portspot --deep
 
 
-🛠️ Advanced Options
-Parameter	Description	Example
+###🛠️ Advanced Options
+##Parameter	Description	Example
 -t URL	Target URL	-t http://test.com
 -w PATH	Custom wordlist	-w ~/wordlists/custom.txt
 -c COOKIES	Session cookies	-c "PHPSESSID=1234"
@@ -71,8 +71,8 @@ Parameter	Description	Example
 --portspot	Enable PortScan	--portspot
 --brute	Enable brute force	--brute
 --proxy PROXY	Use proxy	--proxy http://127.0.0.1:8080
-📌 Sample Workflow
-Initial Recon
+###📌 Sample Workflow
+##Initial Recon
 
 ./PortSpt.py -t http://target.com --portspot -o initial_scan.json
 Authenticated Scan
@@ -82,20 +82,20 @@ Brute Force Discovery
 
 
 ./PortSpt.py -t http://target.com --brute -w /usr/share/wordlists/dirbuster.txt
-📊 PortSpot Integration
+###📊 PortSpot Integration
 #The tool automatically:
 
-Maps open ports to discovered web services
+-Maps open ports to discovered web services
 
-Correlates vulnerabilities with network services
+-Correlates vulnerabilities with network services
 
-Generates interactive network diagrams
+-Generates interactive network diagrams
 
-Exports data to PortSpot for team collaboration
+-Exports data to PortSpot for team collaboration
 
 https://example.com/portspot-diagram.png
 
-📝 Sample Report
+###📝 Sample Report
 {
   "target": "http://example.com",
   "ports": [80, 443, 8080],
@@ -112,35 +112,35 @@ https://example.com/portspot-diagram.png
     "duplicate_code": ["main.js", "old/main.js"]
   }
 }
-🛠️ Future Roadmap
-Enhanced CMS scanning modules
+###🛠️ Future Roadmap
+-Enhanced CMS scanning modules
 
-Cloud infrastructure detection
+-Cloud infrastructure detection
 
-API security testing
+-API security testing
 
-Automated exploit chaining
+-Automated exploit chaining
 
-Real-time collaboration via PortSpot
+-Real-time collaboration via PortSpot
 
-🤝 Contributing
-Fork the repository
+###🤝 Contributing
+-Fork the repository
 
-Create your feature branch (git checkout -b feature/AmazingFeature)
+-Create your feature branch (git checkout -b feature/AmazingFeature)
 
-Commit your changes (git commit -m 'Add some AmazingFeature')
+-Commit your changes (git commit -m 'Add some AmazingFeature')
 
-Push to the branch (git push origin feature/AmazingFeature)
+-Push to the branch (git push origin feature/AmazingFeature)
 
-Open a Pull Request
+-Open a Pull Request
 
-📜 License
-Distributed under the MIT License. See LICENSE for more information.
+###📜 License
+-Distributed under the MIT License. See LICENSE for more information.
 
-📧 Contact
+###📧 Contact
 
 
-Project Link: https://github.com/kkrrishn/PortSpt
+-Project Link: https://github.com/kkrrishn/PortSpt
 
 
 
