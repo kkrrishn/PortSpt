@@ -38,29 +38,29 @@ A Swiss Army knife for web penetration testing, combining automated vulnerabilit
 
 ## 🚀 Installation
 
-```bash
-# Clone repository
-git clone https://github.com/yourusername/PortSpt.git
-cd PortSpt
 
+# Clone repository
+```git clone https://github.com/yourusername/PortSpt.git
+cd PortSpt
+```
 # Install dependencies
-sudo apt update && sudo apt install -y \
+```sudo apt update && sudo apt install -y \
   python3-requests \
   python3-bs4 \
   nikto \
   sqlmap \
   nmap \
   PortSpot
-
+```
 # Make script executable
-chmod +x webpentest.py
-
+```chmod +x webpentest.py
+```
 # Basic scan
-./PortSpt.py -t http://example.com
-
+```./PortSpt.py -t http://example.com
+```
 # Full scan with PortSpot integration
-./PortSpt.py -t http://example.com --portspot --deep
-
+```./PortSpt.py -t http://example.com --portspot --deep
+```
 
 ###🛠️ Advanced Options
 ##Parameter	Description	Example
@@ -74,14 +74,13 @@ chmod +x webpentest.py
 ###📌 Sample Workflow
 ##Initial Recon
 
-./PortSpt.py -t http://target.com --portspot -o initial_scan.json
+```./PortSpt.py -t http://target.com --portspot -o initial_scan.json
 Authenticated Scan
-
-./PortSpt.py -t http://target.com/admin -c "session_cookie=value" --deep
+```
+```./PortSpt.py -t http://target.com/admin -c "session_cookie=value" --deep
 Brute Force Discovery
 
-
-./PortSpt.py -t http://target.com --brute -w /usr/share/wordlists/dirbuster.txt
+./PortSpt.py -t http://target.com --brute -w /usr/share/wordlists/dirbuster.txt ```
 ###📊 PortSpot Integration
 #The tool automatically:
 
@@ -96,7 +95,7 @@ Brute Force Discovery
 https://example.com/portspot-diagram.png
 
 ###📝 Sample Report
-{
+```{
   "target": "http://example.com",
   "ports": [80, 443, 8080],
   "vulnerabilities": [
@@ -111,7 +110,7 @@ https://example.com/portspot-diagram.png
     "unused_js": ["jquery.old.js"],
     "duplicate_code": ["main.js", "old/main.js"]
   }
-}
+}```
 ###🛠️ Future Roadmap
 -Enhanced CMS scanning modules
 
