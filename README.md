@@ -40,8 +40,8 @@ A Swiss Army knife for web penetration testing, combining automated vulnerabilit
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/webpentest-toolkit.git
-cd webpentest-toolkit
+git clone https://github.com/yourusername/PortSpt.git
+cd PortSpt
 
 # Install dependencies
 sudo apt update && sudo apt install -y \
@@ -56,10 +56,10 @@ sudo apt update && sudo apt install -y \
 chmod +x webpentest.py
 
 # Basic scan
-./webpentest.py -t http://example.com
+./PortSpt.py -t http://example.com
 
 # Full scan with PortSpot integration
-./webpentest.py -t http://example.com --portspot --deep
+./PortSpt.py -t http://example.com --portspot --deep
 
 
 🛠️ Advanced Options
@@ -74,14 +74,14 @@ Parameter	Description	Example
 📌 Sample Workflow
 Initial Recon
 
-./webpentest.py -t http://target.com --portspot -o initial_scan.json
+./PortSpt.py -t http://target.com --portspot -o initial_scan.json
 Authenticated Scan
 
-./webpentest.py -t http://target.com/admin -c "session_cookie=value" --deep
+./PortSpt.py -t http://target.com/admin -c "session_cookie=value" --deep
 Brute Force Discovery
 
 
-./webpentest.py -t http://target.com --brute -w /usr/share/wordlists/dirbuster.txt
+./PortSpt.py -t http://target.com --brute -w /usr/share/wordlists/dirbuster.txt
 📊 PortSpot Integration
 #The tool automatically:
 
@@ -138,27 +138,9 @@ Open a Pull Request
 Distributed under the MIT License. See LICENSE for more information.
 
 📧 Contact
-Project Maintainer - @yourhandle - email@example.com
-
-Project Link: https://github.com/yourusername/webpentest-toolkit
 
 
-Key highlights of this README:
+Project Link: https://github.com/kkrrishn/PortSpt
 
-1. **PortSpot Integration Section** - Dedicated section explaining the network scanning capabilities and visualization features
 
-2. **Badges** - Includes PortSpot integration badge for visibility
 
-3. **Installation Instructions** - Now includes PortSpot as a dependency
-
-4. **Sample Workflow** - Shows practical usage with PortSpot scanning
-
-5. **Visual Diagram** - Placeholder for PortSpot integration diagram
-
-6. **Report Example** - Includes port data in sample JSON output
-
-7. **Table Format** - Clean parameter table for easy reference
-
-8. **Future Roadmap** - Includes planned network-related enhancements
-
-The README maintains all your original requirements while adding the PortSpot integration in a way that shows its value without overwhelming the core web testing functionality.
