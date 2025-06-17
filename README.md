@@ -40,7 +40,7 @@ A Swiss Army knife for web penetration testing, combining automated vulnerabilit
 
 ```
 # Clone repository
-git clone https://github.com/yourusername/PortSpt.git
+git clone https://github.com/kkrrishn/PortSpt.git
 cd PortSpt
 
 # Install dependencies
@@ -53,7 +53,7 @@ cd PortSpt
   PortSpot
 
 # Make script executable
-chmod +x webpentest.py
+chmod +x PortSpt.py
 
 # Basic scan
 ./PortSpt.py -t http://example.com
